@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/profile.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet" />
+  <meta name="description" content="My Portfolio website" />
+  <meta name="keywords" content="web design, html, css, js" />
+  <title>Portfolio | MAJEEB</title>
+</head>
+
+<body>
+  <!-- ! Header -->
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li class="header__line"></li>
+        <li>
+          <a class="header__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="header__link" href="#work">Projects</a>
+        </li>
+        <li>
+          <a class="header__link" href="#contact">Contact</a>
+        </li>
+        <li class="header__line"></li>
+        <li>
+          <button id="theme-toggle-btn" aria-label="theme-toggle btn" class="header__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="header__resume btn" download aria-label="resume link"
+            href="./Shaik-Abdul-Majeeb-Resume.pdf">Resume</a>
+        </li>
+      </ul>
+      <button aria-label="mobile nav button" class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+  <!-- ! Mobile Navigation -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#work">Projects</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Contact</a>`
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <button aria-label="theme-toggle btn" id="theme-toggle-btn" class="mobile-nav__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="mobile-nav__btn btn" aria-label="Resume link" target="_blank"
+            href="./Shaik-Abdul-Majeeb-Resume.pdf">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- ? End of Header -->
+  <!-- ! Main -->
+  <main>
+    <!-- ! Hero Section -->
+    <section class="hero container">
+      <img class="hero__img" src="/hero.jpg" alt="Profile picture" />
+      <h2 class="hero__subtitle">Hi, I'm Majeeb 👋</h2>
+      <h1 class="hero__title">
+        FULL STACK <br />
+        WEB DEVELOPER
+      </h1>
+      <p class="hero__description">
+        A passionate <strong>Backend / Fullstack-MernStack</strong> web
+        developer passionate about crafting scalable, dynamic and impactful
+        web sites/applications ensuring seamless performance and user satisfaction
+      </p>
+      <a class="hero__btn btn" href="mailto:majib2001@outlook.com">Contact Me</a>
+    </section>
+
+    <!-- ! About Section -->
+    <section id="about" class="about container section">
+      <div class="about__content">
+        <h2 class="about__title">About</h2>
+        <p class="about__description">
+          Hello there! I'm Shaik Majeeb, a
+          <strong>Backend / Fullstack</strong> web developer based
+          near Montreal. I wake up in the morning, grab a cup of
+          coffee, open up my laptop and build things that live on the web all
+          day, everyday.
+        </p>
+        <p class="about__description">
+          People who know me say I'm obsessed, that's fair, I am very driven
+          and love learning new things.
+        </p>
+        <hr class="about__hr" />
+        <h3 class="about__subtitle">My Technologies</h3>
+        <div class="about__ul-container">
+          <ul class="about__ul">
+            <li class="about__list">JavaScript (ES6+)</li>
+            <li class="about__list">MongoDB</li>
+            <li class="about__list">Express JS</li>
+            <li class="about__list">ReactJS</li>
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">Python</li>
+            <li class="about__list">PostgreSQL</li>
+            <li class="about__list">Flask</li>
+            <li class="about__list">React Native</li>
+          </ul>
+        </div>
+        <h3 class="about__subtitle">Currently Learning</h3>
+        <p class="about__description">
+          👉🏻 I'm Currently learning <strong>NextJS 15, Django & DRF</strong>
+        </p>
+      </div>
+      <div class="about__img-wrapper">
+        <img class="about__img lazy loading" src="https://via.placeholder.com/720" data-src="/about.jpg"
+          alt="Profile picture" />
+      </div>
+    </section>
+
+    <!-- ! Infinity scroll Section-->
+    <section class="technologies container section">
+      <!--  row 1 -->
+      <div class="technologies__wrapper">
+        <div class="technologies__item technologies__item1" title="HTML"><img src="./assets/1-html-5-48.png" alt="">
+        </div>
+        <div class="technologies__item technologies__item2" title="CSS"><img src="./assets/2-css-48.png" alt=""></div>
+        <div class="technologies__item technologies__item3" title="TailwindCSS"><img src="./assets/3-tailwindcss-48.png"
+            alt=""></div>
+        <div class="technologies__item technologies__item4" title="Javascript(ES6+)"><img
+            src="./assets/5-javascript-48.png" alt=""></div>
+        <div class="technologies__item technologies__item5" title="Bootstrap"><img src="./assets/4-bootstrap-48.png"
+            alt=""></div>
+        <div class="technologies__item technologies__item6" title="ReactJS"><img src="./assets/6-react-js-48.png"
+            alt=""></div>
+        <div class="technologies__item technologies__item7" title="Redux ToolKit"><img src="./assets/7-redux-48.png"
+            alt=""></div>
+      </div>
+      <!--  row 2 -->
+      <div class="technologies__wrapper">
+        <div class="technologies__item technologies__item1 reverse" title="Python"><img src="./assets/0-python-48.png"
+            alt=""></div>
+        <div class="technologies__item technologies__item2 reverse" title="ExpressJS"><img
+            src="./assets/express-js-48.png" alt="">
+        </div>
+        <div class="technologies__item technologies__item3 reverse" title="SQLite3"><img src="./assets/14-sqlite-50.png"
+            alt=""></div>
+        <div class="technologies__item technologies__item4 reverse" title="MongoDB"><img src="./assets/8-mongodb-48.png"
+            alt=""></div>
+        <div class="technologies__item technologies__item5 reverse" title="Python Flask"><img
+            src="./assets/13-flask-64.png" alt=""></div>
+        <div class="technologies__item technologies__item6 reverse" title="PostgreSQL"><img
+            src="./assets/11-postgresql-48.png" alt="">
+        </div>
+        <div class="technologies__item technologies__item7 reverse" title="MySQL"><img src="./assets/12-mysql-48.png"
+            alt=""></div>
+      </div>
+      <!--  row 3 -->
+      <div class="technologies__wrapper">
+        <div class="technologies__item technologies__item1" title="NodeJS"><img src="./assets/nodejs-48.png" alt="">
+        </div>
+        <div class="technologies__item technologies__item2" title="React Native"><img src="./assets/react-native.png"
+            alt="" width="48" height="48"></div>
+        <div class="technologies__item technologies__item3" title="React Native Expo"><img src="./assets/expo.png"
+            alt="" width="48" height="48">
+        </div>
+        <div class="technologies__item technologies__item4" title="Typescript"><img src="./assets/typescript.png"
+            alt=""></div>
+        <div class="technologies__item technologies__item5" title="SASS"><img src="./assets/sass.png" alt=""></div>
+        <div class="technologies__item technologies__item6" title="Stripe Payments"><img src="./assets/Stripe-Logo.png"
+            alt="" width="48" height="48">
+        </div>
+        <div class="technologies__item technologies__item7" title="ChatGPT"><img src="./assets/chatgpt-48.png" alt="">
+        </div>
+      </div>
+      <!--  row 4 -->
+      <div class="technologies__wrapper">
+        <div class="technologies__item technologies__item1 reverse" title="Vite"><img src="./assets/vite-logo-48.png"
+            alt="">
+        </div>
+        <div class="technologies__item technologies__item2 reverse" title="node package manager"><img
+            src="./assets/npm-48.png" alt=""></div>
+        <div class="technologies__item technologies__item3 reverse" title="OAuth 2"><img src="./assets/oauth.png" alt=""
+            width="48" height="48">
+        </div>
+        <div class="technologies__item technologies__item4 reverse" title="Perplexity AI"><img
+            src="./assets/perplexity-ai-50.png" alt=""></div>
+        <div class="technologies__item technologies__item5 reverse" title="GitHub"><img src="./assets/github-48.png"
+            alt=""></div>
+        <div class="technologies__item technologies__item6 reverse" title="REST API"><img
+            src="./assets/18rest-api-48.png" alt=""></div>
+        <div class="technologies__item technologies__item7 reverse" title="Google Firebase"><img
+            src="./assets/firebase-48.png" alt=""></div>
+      </div>
+    </section>
+
+    <!-- ! Work Section -->
+    <section id="work" class="work container section">
+      <h2 class="work__title">Projects</h2>
+      <p class="work__description">
+        Here are some of the projects I have worked on recently. Each project showcases my skills and experience in web
+        development, utilizing various technologies and frameworks. I am passionate about creating efficient, scalable,
+        and user-friendly applications. Feel free to explore the details of each project below.
+      </p>
+      <div class="work__container">
+        <!-- Project 1  place LINK-->
+        <h3 class="work__project-title">AiGen</h3>
+        <div class="work__img-wrapper work__image1">
+          <img class="lazy loading" src="https://via.placeholder.com/900" data-src="/project01.png"
+            alt="Wax Motif website" />
+        </div>
+        <div class="work__project work__content1">
+          <h3 class="work__project-subtitle">AiGen</h3>
+          <p class="work__project-description1">
+            This project is an AI-powered content generation platform built using the MERN stack. It leverages AI models
+            to generate high-quality content based on user prompts.
+          </p>
+          <p class="work__project-description2">
+            The backend is implemented with Node.js and Express, handling <strong>user authentication</strong>, payment
+            processing
+            with <strong>Stripe</strong>, and
+            <strong>AI interactions</strong> using the<strong> Groq SDK</strong>. MongoDB is used for data storage,
+            managing user profiles,information, content history, and payment records. The frontend is developed with
+            React, utilizing
+            Tailwind CSS for styling and React Query for data fetching.
+          </p>
+          <a class="btn work__project-btn" target="_blank" rel="noopener"
+            href="https://github.com/Majeeb-0910/ai-blog-generator-server">Server Code</a>
+          <a class="btn work__project-btn margin-left" target="_blank" rel="noopener"
+            href="https://github.com/Majeeb-0910/ai-blog-generator-server">Client Code</a>
+        </div>
+        <!-- * Project 2 -->
+        <h3 class="work__project-title">Blog API</h3>
+        <div class="work__img-wrapper work__image2">
+          <img class="lazy loading" src="https://via.placeholder.com/900" data-src="/project02.png"
+            alt="Blog API using ExpressJS" />
+        </div>
+        <div class="work__project work__content2">
+          <h3 class="work__project-subtitle">Blog API</h3>
+          <p class="work__project-description1">
+            This API is built with Node.js, using the Express.js framework for routing and middleware management. The
+            database is managed with MongoDB, using Mongoose for schema definition and data modeling.
+          </p>
+          <p class="work__project-description2">
+            The application
+            uses Cloudinary for image storage and management. Multer is used for handling file uploads, specifically for
+            uploading profile and cover photos. The application implements authentication and authorization using
+            Express-session and bcrypt for password hashing.
+          </p>
+          <a target="_blank" rel="noopener" class="btn work__project-btn"
+            href="https://github.com/Majeeb-0910/BlogAPI-Only">View Code</a>
+        </div>
+        <!--  * Project 3 -->
+        <h3 class="work__project-title">Family Traveltracker</h3>
+        <div class="work__img-wrapper work__image3">
+          <img class="lazy loading" src="https://via.placeholder.com/900" data-src="/project3.png"
+            alt="Family Traveltracker project image" />
+        </div>
+        <div class="work__project work__content3">
+          <h3 class="work__project-subtitle">Family Traveltracker</h3>
+          <p class="work__project-description1">
+            This project is a family travel tracker application built using <strong>Node.js and Express</strong>. It
+            leverages <Strong>PostgreSQL</Strong>
+            as the database to store user information and the countries they have visited.
+          </p>
+          <p class="work__project-description2">
+            The application allows users
+            to add new family members with their preferred color and track the countries they have visited. The database
+            schema includes tables for users and visited countries, with relationships defined using foreign keys.
+          </p>
+          <a target="_blank" rel="noopener" class="btn work__project-btn"
+            href="https://github.com/Majeeb-0910/family-travel-tracker">View Code</a>
+        </div>
+        <!-- * Project 4 -->
+        <h3 class="work__project-title">Currency Converter</h3>
+        <div class="work__img-wrapper work__image4">
+          <img class="lazy loading" src="https://via.placeholder.com/900" data-src="/project4.png"
+            alt="currency converter website image" />
+        </div>
+        <div class="work__project work__content4">
+          <h3 class="work__project-subtitle">Currency Converter</h3>
+          <p class="work__project-description1">
+            The Currency Converter project is a <strong>full-stack MERN application</strong> designed to provide
+            real-time currency
+            conversion.
+          </p>
+          <p class="work__project-description2">
+            The frontend is built with React offering a responsive and user-friendly interface.
+            Users can select currencies and input amounts to convert. The backend, powered by Express, handles API
+            requests to the <Strong>Exchange-Rate API</Strong> for conversion rates. The server includes <strong>request
+              rate
+              limiting</strong> and <strong>CORS</strong>
+            configuration for security.
+          </p>
+          <a target="_blank" rel="noopener" class="btn work__project-btn"
+            href="https://github.com/Majeeb-0910/MERN-Currency-Conveter-server">Server
+            Code</a>
+          <a target="_blank" rel="noopener" class="btn work__project-btn margin-left"
+            href="https://github.com/Majeeb-0910/MERN-Currency-Conveter-client">Client
+            Code</a>
+
+        </div>
+        <!-- * Project 5 -->
+        <h3 class="work__project-title">Note Keeper</h3>
+        <div class="work__img-wrapper work__image5">
+          <img class="lazy loading" src="https://via.placeholder.com/900" data-src="/project5.png"
+            alt="Note Keeper website" />
+        </div>
+        <div class="work__project work__content5">
+          <h3 class="work__project-subtitle">Note Keeper</h3>
+          <p class="work__project-description1">
+            This project is a <strong>React-based</strong> note-taking application. It allows users to create, edit, and
+            delete notes.
+          </p>
+          <p class="work__project-description2">
+            React Hooks are used for state management.
+            Additionally, it uses CSS for styling. The
+            application is structured using a modular approach, with separate components for each feature.
+          </p>
+          <a target="_blank" rel="noopener" class="btn work__project-btn"
+            href="https://codesandbox.io/p/sandbox/10-2-keeper-part-3-qnl66y">View
+            Code</a>
+          <a target="_blank" rel="noopener" class="btn work__project-btn margin-left"
+            href="https://qnl66y.csb.app/">Website</a>
+        </div>
+        <!-- * Project 6 -->
+        <h3 class="work__project-title">Auth API with NodeJS</h3>
+        <div class="work__img-wrapper work__image6">
+          <img class="lazy loading" src="https://via.placeholder.com/900" data-src="/project6.png"
+            alt="Portfolio website" />
+        </div>
+        <div class="work__project work__content6">
+          <h3 class="work__project-subtitle">Auth API with NodeJS</h3>
+          <p class="work__project-description1">
+            This project is a user authentication API built using <strong>Node.js and Express.js</strong>.
+            It utilizes <strong>MongoDB</strong> as the database management system.
+          </p>
+          <p class="work__project-description2">
+
+            The API provides endpoints for user registration, login, and profile management.
+            It uses <strong>JSON Web Tokens (JWT)</strong> for authentication and authorization.
+            The project also employs <strong>bcrypt</strong> for password hashing and salting.
+            The API is designed to handle JSON data and returns responses in JSON format.
+            Error handling is implemented using a custom error handler middleware.
+          </p>
+          <a class="btn work__project-btn" href="https://github.com/Majeeb-0910/Node-AuthApi" target="_blank"
+            rel="noopener">View Code</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Contact Section -->
+    <section id="contact" class="contact container section">
+      <h2 class="contact__title">Get In Contact</h2>
+      <p class="contact__description">
+        Whether you are starting a project, have business inquiries or just
+        want to say hi, my inbox is always open so feel free to reach out and
+        I will get back to you as soon as possible.
+      </p>
+      <a class="contact__btn btn" href="mailto:majib2001@outlook.com" target="_blank">React Out</a>
+    </section>
+    <button id="scrollUpBtn">^</button>
+  </main>
+
+  <!-- ! Footer -->
+  <footer class="footer container section">
+    <h3 class="footer__title">~ Shaik Mohammad Abdul Majeeb ~</h3>
+    <h3 class="footer__email">~ majib2001@outlook.com ~</h3>
+  </footer>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
